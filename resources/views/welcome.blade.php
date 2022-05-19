@@ -13,7 +13,8 @@
 
     </head>
     <body id="app">
-        Test
-        <meili></meili>
+        <div class="col-md-8 mx-auto">
+            <meili></meili>
+        </div>
     </body>
 </html>

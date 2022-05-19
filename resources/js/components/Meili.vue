@@ -8,20 +8,24 @@
                 'ais-SearchBox-reset': 'btn btn-light border border-grey'
             }"
             v-model="searchText">
-
-            <template #submit-icon>
-                <i class="fa fa-magnifying-glass"></i>
-            </template>
-
-            <template #reset-icon>
-                <i class="fa fa-times"></i>
-            </template>
         </ais-search-box>
 
         <ais-sort-by :items="[{ label: 'Zugriff', value: 'customers:accessed_at:desc' }]" class="d-none"></ais-sort-by>
 
         <ais-hits v-slot="{ items }">
             <div class="list-group mt-4">
+
+                <div class="list-group-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            Name
+                        </div>
+                        <div class="col-md-3">
+                            Accessed at
+                        </div>
+                    </div>
+                </div>
+
                 <button
                     v-for="(item, itemIndex) in items"
                     :key="itemIndex"
