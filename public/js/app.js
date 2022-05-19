@@ -33369,7 +33369,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_ais_instant_search, {
     "search-client": $data.searchClient,
-    "index-name": "customers:accessed_at:desc",
+    "index-name": "customers:accessed_at_sortable:desc",
     routing: $data.routing
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -33389,7 +33389,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       , ["modelValue"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ais_sort_by, {
         items: [{
           label: 'Zugriff',
-          value: 'customers:accessed_at:desc'
+          value: 'customers:accessed_at_sortable:desc'
         }],
         "class": "d-none"
       }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_ais_hits, null, {

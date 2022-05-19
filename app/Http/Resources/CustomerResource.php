@@ -12,6 +12,7 @@ class CustomerResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'accessed_at' => $this->accessed_at?->format('d.m.Y H:i'),
+            'accessed_at_sortable' => $this->accessed_at->timestamp,
         ];
     }
 }

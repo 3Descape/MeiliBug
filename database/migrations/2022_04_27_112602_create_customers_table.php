@@ -24,7 +24,7 @@ class CreateCustomersTable extends Migration
         $client = app()->make(\MeiliSearch\Client::class);
 
         $client->index('customers')->updateSortableAttributes([
-            'accessed_at',
+            'accessed_at_sortable',
         ]);
     }
 

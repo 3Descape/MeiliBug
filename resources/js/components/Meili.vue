@@ -1,5 +1,5 @@
 <template>
-    <ais-instant-search :search-client="searchClient" index-name="customers:accessed_at:desc" :routing="routing"> <!-- Working -->
+    <ais-instant-search :search-client="searchClient" index-name="customers:accessed_at_sortable:desc" :routing="routing"> <!-- Working -->
     <!-- <ais-instant-search :search-client="searchClient" index-name="customers" :routing="routing">  --> <!-- Not working -->
         <ais-search-box :classNames="{
                 'ais-SearchBox-form': 'input-group',
@@ -10,7 +10,7 @@
             v-model="searchText">
         </ais-search-box>
 
-        <ais-sort-by :items="[{ label: 'Zugriff', value: 'customers:accessed_at:desc' }]" class="d-none"></ais-sort-by>
+        <ais-sort-by :items="[{ label: 'Zugriff', value: 'customers:accessed_at_sortable:desc' }]" class="d-none"></ais-sort-by>
 
         <ais-hits v-slot="{ items }">
             <div class="list-group mt-4">
